@@ -13,7 +13,7 @@ setup(
     packages=['ndarray'],
     include_package_data=True,
     license='ICS',
-    test_suite='tests',
+    test_suite='tests.test_all',
     install_requires=[
         'numpy>=1',
         'Django>=2',

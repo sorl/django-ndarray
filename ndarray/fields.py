@@ -1,8 +1,8 @@
 import numpy as np
 import pickle
+from django.core import checks
 from django.db import models
 from django.utils.translation import gettext_lazy as _
-from django.core import checks
 
 
 class NDArrayField(models.BinaryField):
