@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='django-ndarray',
-    version='0.0.2',
+    version='0.0.3',
     url='http://github.com/sorl/django-ndarray',
     description='Numpy n-dimensional field for Django.',
     long_description=open('README.md').read(),

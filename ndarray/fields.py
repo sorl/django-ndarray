@@ -27,4 +27,5 @@ class NDArrayField(models.BinaryField):
             return pickle.loads(value)
 
     def deconstruct(self):
-        return models.BinaryField().deconstruct()
+        name, path, args, kwargs = super().deconstruct()
+        return name, 'django.db.models.BinaryField', args, kwargs
