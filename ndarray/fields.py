@@ -25,3 +25,6 @@ class NDArrayField(models.BinaryField):
     def from_db_value(self, value, expression, connection):
         if value is not None:
             return pickle.loads(value)
+
+    def deconstruct(self):
+        return models.BinaryField().deconstruct()
